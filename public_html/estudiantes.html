@@ -9,19 +9,33 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="css/cursos.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/estudiantes.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     </head>
     <body>
+        <!--Boton flotante-->
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating red" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">edit</i></a></li>
+                <li><a class="btn-floating yellow darken-1" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">poll</i></a></li>
+                <li><a class="btn-floating green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px) translateX(0px); opacity: 0;"><i class="material-icons">access_alarm</i></a></li>
+            </ul>
+        </div>
+        <!--Boton flotante-->
+        
         <nav>
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo">RAOweb</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#" class="active">Cursos</a></li>
+                    <li><a href="cursos.html" class="active">Cursos</a></li>
                     <li><a href='#'>Alertas</a></li>
                     <li><a href="#">Cerrar sesión</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="#">Cursos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
                     <li><a href='#'>Alertas</a></li>
                     <li><a href="#">Cerrar sesión</a></li>
                 </ul>
@@ -32,16 +46,22 @@
             <div class="col s12 offset-m1 m9 offset-l1 l10">
                 <div class="card-panel">
                     <div id="titulo">
+                        <a class="waves-effect waves-light darken-1"><i class="material-icons left">arrow_back</i></a>
                         <h1 class="white-text">Cursos</h1>
+                    </div>
+                    
+                    <div class="input-field" id="search">
+                        <input type="text" id="buscar" class="validate">
+                        <label for="buscar">Buscar</label>
                     </div>
                     
                     <div class="row collection-item">
                         <a href="estudiantes.html" class="col s10 m9 l9 name">
-                            <span class="title">Práctica profesional</span>
-                            <p>1424-201510</p> 
+                            <span class="title">Laura Cristina Schiatti Sisó</span>
+                            <p>T00031849</p> 
                         </a>
                         <div  class="col s2 m3 l3">
-                            <a class="btn-floating btn-large waves-effect waves-light yellow darken-1 right"><i class="material-icons">check</i></a>
+                            <a class="btn-floating btn-large waves-effect waves-light darken-1 right"><i class="material-icons">edit</i></a>
                         </div>
                     </div>
                     <div class="row collection-item">
@@ -52,43 +72,62 @@
                         <div  class="col s2 m3 l3">
                             <a class="btn-floating btn-large waves-effect waves-light yellow darken-1 right"><i class="material-icons">check</i></a>
                         </div>
+                        <!--<div class="input-field col s2 m3 l3">
+                            <select>
+                               <option value="" disabled selected>Indefinido</option>
+                               <option value="1">Vino</option>
+                               <option value="2">Llego tarde</option>
+                               <option value="3">No vino</option>
+                               <option value="4">Se fue temprano</option>
+                            </select>
+                        </div>-->
                     </div>
                     <div class="row collection-item">
                         <a href="estudiantes.html" class="col s10 m9 l9 name">
-                            <span class="title">Práctica profesional</span>
-                            <p>1424-201510</p> 
+                            <span class="title">Laura Cristina Schiatti Sisó</span>
+                            <p>T00031849</p> 
                         </a>
                         <div  class="col s2 m3 l3">
-                            <a class="btn-floating btn-large waves-effect waves-light yellow darken-1 right"><i class="material-icons">check</i></a>
+                            <a class="btn-floating btn-large waves-effect waves-light darken-1 right"><i class="material-icons">edit</i></a>
                         </div>
                     </div>
                     <div class="row collection-item">
                         <a href="estudiantes.html" class="col s10 m9 l9 name">
-                            <span class="title">Práctica profesional</span>
-                            <p>1424-201510</p> 
+                            <span class="title">Laura Cristina Schiatti Sisó</span>
+                            <p>T00031849</p> 
                         </a>
                         <div  class="col s2 m3 l3">
-                            <a class="btn-floating btn-large waves-effect waves-light yellow darken-1 right"><i class="material-icons">check</i></a>
+                            <a class="btn-floating btn-large waves-effect waves-light darken-1 right"><i class="material-icons">edit</i></a>
                         </div>
                     </div>
                     <div class="row collection-item">
                         <a href="estudiantes.html" class="col s10 m9 l9 name">
-                            <span class="title">Práctica profesional</span>
-                            <p>1424-201510</p> 
+                            <span class="title">Laura Cristina Schiatti Sisó</span>
+                            <p>T00031849</p> 
                         </a>
                         <div  class="col s2 m3 l3">
-                            <a class="btn-floating btn-large waves-effect waves-light yellow darken-1 right"><i class="material-icons">check</i></a>
+                            <a class="btn-floating btn-large waves-effect waves-light darken-1 right"><i class="material-icons">edit</i></a>
                         </div>
                     </div>
                     <div class="row collection-item">
                         <a href="estudiantes.html" class="col s10 m9 l9 name">
-                            <span class="title">Práctica profesional</span>
-                            <p>1424-201510</p> 
+                            <span class="title">Laura Cristina Schiatti Sisó</span>
+                            <p>T00031849</p> 
                         </a>
                         <div  class="col s2 m3 l3">
-                            <a class="btn-floating btn-large waves-effect waves-light yellow darken-1 right"><i class="material-icons">check</i></a>
+                            <a class="btn-floating btn-large waves-effect waves-light darken-1 right"><i class="material-icons">edit</i></a>
                         </div>
                     </div>
+                    <div class="row collection-item">
+                        <a href="estudiantes.html" class="col s10 m9 l9 name">
+                            <span class="title">Laura Cristina Schiatti Sisó</span>
+                            <p>T00031849</p> 
+                        </a>
+                        <div  class="col s2 m3 l3">
+                            <a class="btn-floating btn-large waves-effect waves-light darken-1 right"><i class="material-icons">edit</i></a>
+                        </div>
+                    </div>
+                    
                 </div>
                 
             </div>
